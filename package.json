@@ -1,0 +1,51 @@
+{
+  "name": "webapp-exercise",
+  "description": "A web app project based on webcube",
+  "author": "dexteryy <dexter.yy@gmail.com>",
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/FlipboardChina/webapp-exercise/issues"
+  },
+  "homepage": "https://github.com/FlipboardChina/webapp-exercise",
+  "repository": "https://github.com/FlipboardChina/webapp-exercise",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm run lint",
+    "lint": "./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js check:all",
+    "test": "./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js test:all",
+    "test:quick": "./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js test:functional",
+    "test:unit": "./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js test:unit",
+    "test:cloud": "DEPLOY_MODE=staticweb NODE_ENV=production ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js test:functional",
+    "build": "npm run start:staticserver && ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js build",
+    "build:quick": "npm run start:staticserver && ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js build:html",
+    "new": "./node_modules/plop/src/plop.js --plopfile=node_modules/webcube/configs/plopfile.babel.js",
+    "dev": "npm run stop:staticserver && node node_modules/webcube/tools/devServer.js",
+    "dev:dashboard": "npm run stop:staticserver && ./node_modules/webpack-dashboard/bin/webpack-dashboard.js -- node node_modules/webcube/tools/devServer.js",
+    "update": "rm -rf ./node_modules && yarn",
+    "upgrade": "rm -rf ./node_modules yarn.lock && yarn",
+    "start:staticserver": "nohup ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js start:staticserver > ./webserver.log 2>&1 &",
+    "stop:staticserver": "./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js stop:staticserver",
+    "deploy:staticweb": "DEPLOY_MODE=staticweb NODE_ENV=production ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js deploy:staticweb",
+    "deploy:staticweb:html": "DEPLOY_MODE=staticweb NODE_ENV=production ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js deploy:html",
+    "deploy:staticweb:assets": "DEPLOY_MODE=staticweb NODE_ENV=production ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js deploy:static",
+    "deploy:staging:staticweb": "DEPLOY_ENV=staging DEPLOY_MODE=staticweb NODE_ENV=production ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js deploy:staticweb",
+    "deploy:staging:staticweb:html": "DEPLOY_ENV=staging DEPLOY_MODE=staticweb NODE_ENV=production ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js deploy:html",
+    "deploy:staging:staticweb:assets": "DEPLOY_ENV=staging DEPLOY_MODE=staticweb NODE_ENV=production ./node_modules/gulp/bin/gulp.js --gulpfile node_modules/webcube/configs/gulpfile.babel.js deploy:static"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": ">=7.8"
+  },
+  "dependencies": {
+    "normalize.css": "^6.0.0",
+    "webcube": "^0.8.6"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

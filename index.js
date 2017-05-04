@@ -1,4 +1,4 @@
 
-import app from './app/example-app';
+import app from './app/job-list';
 
 export default app;

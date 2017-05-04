@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "normalize.css": "^6.0.0",
-    "webcube": "^0.8.6"
+    "webcube": "^0.8.7"
   },
   "devDependencies": {},
   "keywords": []

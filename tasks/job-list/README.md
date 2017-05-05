@@ -15,8 +15,9 @@
 ### 交互需求
 
 1. 点击职位条目左侧的 checkbox，toggle （选中或清空）当前点击的 checkbox
-2. 点击部门条目左侧的 checkbox，toggle （选中或清空）这个部门中所有职位条目左侧的 checkbox
-3. 不需要实现部门条目的收拢展开功能（右侧箭头）
+2. 点击部门条目左侧的 checkbox，toggle （选中或清空）当前点击的 checkbox 和这个部门中所有职位条目左侧的 checkbox
+3. 点击部门条目右侧的箭头，toggle（隐藏或显示）这个部门下面的职位列表。列表隐藏时，箭头朝上，列表显示时，箭头朝下。列表在隐藏和显示状态之间切换的过渡效果（比如动画），请自行设计和实现
+4. 点击顶部右侧的『清空』按钮，所有 checkbox 都要被重置成未选中状态
 
 ### 工程需求
 
@@ -36,7 +37,8 @@
 * CSS in JS: https://speakerdeck.com/vjeux/react-css-in-js
 * Styling React: https://survivejs.com/react/advanced-techniques/styling-react/
 * MDN: https://developer.mozilla.org/en-US/docs/Web
-* CSS Reference: http://cssreference.io/
 * CSS-Tricks: https://css-tricks.com/snippets/css/
+* CSS Reference: http://cssreference.io/
+* Easing functions: http://easings.net/
 * Learn ES2015: https://babeljs.io/learn-es2015/
 * Webcube: https://github.com/dexteryy/webcube

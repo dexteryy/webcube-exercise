@@ -1,11 +1,15 @@
 
 # webapp-exercise
 
+A web app codebase based on [webcube](https://github.com/dexteryy/webcube) for coding interview challenges
+
 ![iOS Safari](https://github.com/alrra/browser-logos/raw/master/src/safari-ios/safari-ios_48x48.png) | ![Android WebView](https://github.com/alrra/browser-logos/raw/master/src/android/android_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |
 --- | --- | --- |
 iOS 7+ ✔ | Android 4+ ✔ | 11+ ✔ |
 
-A web app project based on [webcube](https://github.com/dexteryy/webcube)
+## Challenges
+
+* [Job List](https://github.com/FlipboardChina/webapp-exercise/tree/master/tasks/job-list)
 
 ## Structure
 

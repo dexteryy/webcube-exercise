@@ -1,29 +1,8 @@
 
-import 'normalize.css/normalize.css';
 import './deploy.scss';
 import App from 'app/job-list';
 
-const app = new App({
-  isStaticWeb: true,
-  // enableGoogleTagManager: true,
-  // googleTagManagerContainerId: 'GTM-XXXX',
-  // enableGoogleAnalytics: true,
-  // googleAnalyticsTrackingId: 'UA-XXXXX-Y',
-  // googleOptimizeId: 'GTM-XXXXXXX'
-  // googleAnalyticsInit: null,
-  // enableBaiduTongji: true,
-  // baiduTongjiId: 'XXXXXX',
-  // enableGrowingIo: false,
-  // growingIoAccountId: 'XXXXXXX',
-  // enableZhugeIo: false,
-  // zhugeIoAppKey: 'XXXXXX',
-  // enableWechatSdk: true,
-  // wechatSignatureApi: WECHAT_SIGNATURE_API,
-  // wechatDebug: false,
-  // wechatShare: {
-  //   imgUrl: '',
-  // },
-});
+const app = new App();
 
 export default function run() {
   if (window.innerWidth && window.innerHeight

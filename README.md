@@ -56,16 +56,15 @@ cp ./configs/env.sample.config env.config
 
 Install dependencies:
 
-<!-- > NOTE: Yarn is not recommended -->
 ```bash
-yarn
+npm run update
 ```
 
 #### Step 3
 
 Follow [webcube's document](https://github.com/dexteryy/webcube#how-to-build-the-web-app) to install / build / test / deploy / ...
 
-## Other Conventions
+## Other Convention
 
 #### Code Style
 
@@ -74,44 +73,6 @@ Similiar to [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript
 More detail:
 
 * [`.eslintrc.yml`](https://github.com/dexteryy/webcube-example/blob/master/.eslintrc.yml)
-* [`.flowconfig`](https://github.com/dexteryy/webcube-example/blob/master/.flowconfig)
-* [`.stylelintrc`](https://github.com/dexteryy/webcube-example/blob/master/.stylelintrc)
-* [`.csscomb.json`](https://github.com/dexteryy/webcube-example/blob/master/.csscomb.json)
-* [`.htmlhintrc`](https://github.com/dexteryy/webcube-example/blob/master/.htmlhintrc)
-
-#### Recommended Editor/IDE
-
-* [Atom](atom.io/) + following plugins:
-  * [language-babel](https://atom.io/packages/language-babel)
-  * [linter](https://atom.io/packages/linter) + [linter-eslint](https://atom.io/packages/linter-eslint) + [linter-flow](https://atom.io/packages/linter-flow) + [linter-htmlhint](https://atom.io/packages/linter-htmlhint)
-  * [editorconfig](https://atom.io/packages/editorconfig)
-  * [toggle-quotes](https://atom.io/packages/toggle-quotes) + [vim-surround](https://atom.io/packages/vim-surround)
-  * [auto-detect-indentation](https://atom.io/packages/auto-detect-indentation) + [resize-indent](https://atom.io/packages/resize-indent)
-  * [atom-css-comb](https://atom.io/packages/atom-css-comb)
-
-Recommended Settings for Atom (config.cson):
-
-```json
-"linter":
-  ignoreVCSIgnoredFiles: false
-  lintOnFly: false
-"linter-stylelint":
-  disableWhenNoConfig: true
-"language-babel":
-  transpileOnSave: false
-"atom-css-comb":
-  projectConfigs: ".csscomb"
-  readyMadeConfigs: "csscomb"
-"whitespace":
-  ignoreWhitespaceOnCurrentLine: false
-"trailing-spaces":
-  enableForCursorLines: true
-```
-
-#### Git Hooks
-
-* pre-commit: `npm run lint`
-* pre-push: `npm run build`
 
 #### Committing Changes with [Commitizen](https://www.npmjs.com/package/commitizen)
 

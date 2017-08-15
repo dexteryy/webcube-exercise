@@ -1,7 +1,7 @@
 
 #  Job List 任务说明
 
-实现下图中的 UI
+实现下图中的 web app
 
 ![](job-list.png)
 

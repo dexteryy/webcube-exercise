@@ -34,7 +34,7 @@
 
 ### 工程需求
 
-1. 在 Github 上 fork [FlipboardChina/webapp-exercise](https://github.com/FlipboardChina/webapp-exercise) 项目，clone 到本地，按照 README 文档里的步骤进行初始安装、构建和调试，在 [app/job-list](https://github.com/FlipboardChina/webapp-exercise/tree/master/app/job-list) 目录里进行开发（注意 [app/job-list/index.js](https://github.com/FlipboardChina/webapp-exercise/tree/master/app/job-list/index.js) 不需要修改）
+1. 在 Github 上 fork [dexteryy/webcube-exercise](https://github.com/dexteryy/webcube-exercise) 项目，clone 到本地，按照 README 文档里的步骤进行初始安装、构建和调试，在 [app/job-list](https://github.com/dexteryy/webcube-exercise/tree/master/app/job-list) 目录里进行开发（注意 [app/job-list/index.js](https://github.com/dexteryy/webcube-exercise/tree/master/app/job-list/index.js) 不需要修改）
 2. 要求使用 React 和 ES6，不可使用 Redux、MobX 等做应用状态管理的库
 3. 要求使用 plain CSS、[SCSS](http://sass-lang.com/)、[CSS in JS](https://speakerdeck.com/vjeux/react-css-in-js) 中任意一种。项目中已启用 [Autoprefixer](https://github.com/postcss/autoprefixer)。对于 plain CSS 和 SCSS，项目中启用了 [CSS Modules](https://github.com/css-modules/css-modules)
 4. 不需要写测试
